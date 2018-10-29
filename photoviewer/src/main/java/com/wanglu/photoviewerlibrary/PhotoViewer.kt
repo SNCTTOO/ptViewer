@@ -182,6 +182,8 @@ object PhotoViewer {
                         if (mDotGroup != null) {
                             mDotGroup!!.removeAllViews()
                         }
+                        if (mInterface != null)
+                            mInterface = null
                         frameLayout.removeAllViews()
                         decorView.removeView(frameLayout)
                         fragments.clear()
